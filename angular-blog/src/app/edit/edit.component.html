@@ -1,0 +1,16 @@
+<div *ngIf="post">
+    <div>
+        <label for="title">Title: </label>
+        <input type="text" id="title" [(ngModel)]="post.title">
+    </div>
+    <div>
+        <label for="body">Body: </label>
+        <textarea style="height: 10rem;" id="body" [(ngModel)]="post.body"></textarea>
+    </div>
+    <div *ngIf="displayModificationTime()">
+        Last modified at {{ post.modified | date:'short' }}
+    </div>
+    <button class="deleteButton" (click)="deletePost()">Delete</button>
+    <button class="saveButton" (click)="savePost()">Save</button>
+    <button class="previewButton" (click)="previewPost()">Preview</button>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View Posts</title>
+    </head>
+    <body>
+        <% for(let i = 0; i < posts.length; i++) { %>
+            <% if (i > 0) { %>
+                <hr>
+            <% } %>
+            <table>
+                <tr>
+                    <th>Created</th>
+                    <th>Modified</th>
+                </tr>
+                <tr>
+                    <td><%- posts[i].created %></td>
+                    <td><%- posts[i].modified %></td>
+                </tr>
+            </table>
+            <h1><%- posts[i].title %></h1>
+            <p><%- posts[i].body %></p>
+        <% } %>
+        <% if (renderNext) { %>
+            <a id="next" href="<%- nextUrl %>">Next</a>
+        <% } %>  
+    </body>
+</html>

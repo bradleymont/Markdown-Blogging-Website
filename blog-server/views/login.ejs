@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form action="login" method="POST">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="<%- username %>">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" value="<%- password %>">
+            </div>
+            <% if (redirect) { %>
+                <input type="hidden" name="redirect" value="<%- redirect %>">
+            <% } %>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+<button (click)="addPost()">New Post</button>
+<ul>
+    <li *ngFor="let blogPost of blogPosts" (click)="selectPost(blogPost)" >
+        <span class="postDate">{{ blogPost.created | date:'short' }}</span>
+        <span class="postTitle">{{ blogPost.title }}</span>
+    </li>
+</ul>

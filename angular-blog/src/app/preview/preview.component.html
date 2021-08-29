@@ -1,0 +1,5 @@
+<div *ngIf="previewPost ">
+    <h1 [innerHTML]="this.compileMarkdown(previewPost.title)"></h1>
+    <div [innerHTML]="this.compileMarkdown(previewPost.body)"></div>
+    <button (click)="goBackToEdit()">Edit</button>
+</div>

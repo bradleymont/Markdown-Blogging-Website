@@ -1,0 +1,35 @@
+button {
+    background-color: chartreuse;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: limegreen;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+ul li {
+    cursor: pointer;
+    background: lightblue;
+    border: .5px solid black;
+    padding: 3px 0px 3px 0px;
+}
+
+ul li:hover {
+    background: lightskyblue;
+}
+
+.postDate {
+    padding: 0px 10px 0px 10px;
+    border-right: .75px solid black;
+}
+
+.postTitle {
+    padding: 0px 10px 0px 10px;
+}
